@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { AddButton } from './components/addButton/addButton';
+import Card from './components/card/card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="h-screen w-screen bg-gradient-to-b from-white to-[#EEEEEE]">
+      <div class ="mx-5">
+        <div class="pb-6 pt-8 text-xl text-orange font-inter font-black leading-none">Meu cardápio</div>
+        <Card/>
+        <Card/>
+        <AddButton/>
+      </div>      
     </div>
+
+    
   );
 }
 
